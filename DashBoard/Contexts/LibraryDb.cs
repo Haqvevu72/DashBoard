@@ -27,7 +27,7 @@ namespace DashBoard.Contexts
             modelBuilder.ApplyConfiguration(new S_CradConfig());
             modelBuilder.ApplyConfiguration(new StudentConfig());
             modelBuilder.ApplyConfiguration(new TeacherConfig());
-            modelBuilder.ApplyConfiguration(new TeacherConfig());
+            modelBuilder.ApplyConfiguration(new ThemeConfig());
             base.OnModelCreating(modelBuilder);
         }
     
