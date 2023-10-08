@@ -1,0 +1,7 @@
+﻿namespace DashBoard.Entities
+{
+    public class Category:BaseEntity
+    {
+        public string Name { get; set; }
+    }
+}
