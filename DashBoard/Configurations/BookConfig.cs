@@ -35,6 +35,26 @@ namespace DashBoard.Configurations
                    .IsRequired()
                    .HasColumnType("bigint");
 
+            // Realtionship between Author and Book
+            builder.HasOne<Author>()
+                   .WithMany()
+                   .HasForeignKey(book => book.Id_Author);
+
+            // Relationship between Press and Book
+            builder.HasOne<Press>()
+                   .WithMany()
+                   .HasForeignKey(book => book.Id_Press);
+
+            // Relationship between Theme and Book
+            builder.HasOne<Theme>()
+                   .WithMany()
+                   .HasForeignKey(book => book.Id_Theme);
+
+            // Relationship between Category and Book 
+            builder.HasOne<Category>()
+                   .WithMany()
+                   .HasForeignKey(book => book.Id_Category);
+
         }
     }
 }

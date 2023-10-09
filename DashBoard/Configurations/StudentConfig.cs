@@ -20,6 +20,12 @@ namespace DashBoard.Configurations
             builder.Property(student => student.LastName)
                    .IsRequired()
                    .HasMaxLength(25);
+
+
+            // {One-to-Many} Relationship between Group and Student
+            builder.HasOne<Group>()
+                   .WithMany()
+                   .HasForeignKey(student => student.Id_Group);
         } 
     }
 }

@@ -15,6 +15,11 @@ namespace DashBoard.Configurations
             builder.Property(group => group.Name)
                    .IsRequired()
                    .HasMaxLength(10);
+
+            // {One-to-Many} relationship between Faculty and Group
+            builder.HasOne<Faculty>()
+                   .WithMany()
+                   .HasForeignKey(group => group.Id_Faculty);
         }
     }
 }

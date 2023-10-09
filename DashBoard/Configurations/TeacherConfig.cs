@@ -20,6 +20,11 @@ namespace DashBoard.Configurations
             builder.Property(teacher => teacher.LastName)
                    .IsRequired()
                    .HasMaxLength(25);
+
+            // {One-to-Many} relationship between Department and Teacher
+            builder.HasOne<Department>()
+                   .WithMany()
+                   .HasForeignKey(teacher => teacher.Id_Dep);
         }
     }
 }

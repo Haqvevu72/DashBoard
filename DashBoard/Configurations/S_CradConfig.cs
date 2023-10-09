@@ -10,6 +10,20 @@ namespace DashBoard.Configurations
         {
             // Id
             builder.HasKey(s_card => s_card.Id);
+
+            // Relationship S_Card Between (Book,Student) (Many-to-Many)
+            builder.HasOne<Book>()
+                   .WithMany()
+                   .HasForeignKey(s_card => s_card.Id_Book);
+
+            builder.HasOne<Student>()
+                   .WithMany()
+                   .HasForeignKey(s_card => s_card.Id_Student);
+
+            // Relationship between T_Card and Lib (One-to-Many)
+            builder.HasOne<Lib>()
+                   .WithMany()
+                   .HasForeignKey(s_card => s_card.Id_Lib);
         }
     }
 }
