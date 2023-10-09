@@ -10,7 +10,7 @@
 
         public DateTime DateOut { get; set; }
 
-        public DateTime DateIn { get; set; }
+        public DateTime? DateIn { get; set; }
 
     }
 }

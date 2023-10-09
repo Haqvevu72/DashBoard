@@ -242,7 +242,7 @@ namespace DashBoard.Migrations
                     Id_Book = table.Column<int>(type: "int", nullable: false),
                     Id_Lib = table.Column<int>(type: "int", nullable: false),
                     DateOut = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DateIn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateIn = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Created = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Modified = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },

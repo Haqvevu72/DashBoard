@@ -78,9 +78,9 @@
             lbl_bookcount.Location = new Point(77, 21);
             lbl_bookcount.Name = "lbl_bookcount";
             lbl_bookcount.Padding = new Padding(0, 10, 0, 0);
-            lbl_bookcount.Size = new Size(54, 30);
+            lbl_bookcount.Size = new Size(18, 30);
             lbl_bookcount.TabIndex = 1;
-            lbl_bookcount.Text = "10000";
+            lbl_bookcount.Text = "0";
             // 
             // lbl_book
             // 
@@ -106,12 +106,12 @@
             // 
             lbl_studentcount.AutoSize = true;
             lbl_studentcount.Font = new Font("Franklin Gothic Medium", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_studentcount.Location = new Point(77, 21);
+            lbl_studentcount.Location = new Point(91, 23);
             lbl_studentcount.Name = "lbl_studentcount";
             lbl_studentcount.Padding = new Padding(0, 10, 0, 0);
-            lbl_studentcount.Size = new Size(54, 30);
+            lbl_studentcount.Size = new Size(18, 30);
             lbl_studentcount.TabIndex = 1;
-            lbl_studentcount.Text = "10000";
+            lbl_studentcount.Text = "0";
             // 
             // lbl_student
             // 
@@ -137,12 +137,12 @@
             // 
             lbl_teachercount.AutoSize = true;
             lbl_teachercount.Font = new Font("Franklin Gothic Medium", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_teachercount.Location = new Point(77, 21);
+            lbl_teachercount.Location = new Point(97, 21);
             lbl_teachercount.Name = "lbl_teachercount";
             lbl_teachercount.Padding = new Padding(0, 10, 0, 0);
-            lbl_teachercount.Size = new Size(54, 30);
+            lbl_teachercount.Size = new Size(18, 30);
             lbl_teachercount.TabIndex = 1;
-            lbl_teachercount.Text = "10000";
+            lbl_teachercount.Text = "0";
             // 
             // lbl_teacher
             // 
