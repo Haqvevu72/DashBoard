@@ -32,8 +32,8 @@
             contextMenuStrip1 = new ContextMenuStrip(components);
             label1 = new Label();
             pnl_book = new Panel();
-            lbl_book = new Label();
             lbl_bookcount = new Label();
+            lbl_book = new Label();
             panel1 = new Panel();
             lbl_studentcount = new Label();
             lbl_student = new Label();
@@ -71,16 +71,6 @@
             pnl_book.Size = new Size(208, 55);
             pnl_book.TabIndex = 3;
             // 
-            // lbl_book
-            // 
-            lbl_book.AutoSize = true;
-            lbl_book.Font = new Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_book.Location = new Point(62, -5);
-            lbl_book.Name = "lbl_book";
-            lbl_book.Size = new Size(93, 21);
-            lbl_book.TabIndex = 0;
-            lbl_book.Text = "Book Count:";
-            // 
             // lbl_bookcount
             // 
             lbl_bookcount.AutoSize = true;
@@ -91,6 +81,16 @@
             lbl_bookcount.Size = new Size(54, 30);
             lbl_bookcount.TabIndex = 1;
             lbl_bookcount.Text = "10000";
+            // 
+            // lbl_book
+            // 
+            lbl_book.AutoSize = true;
+            lbl_book.Font = new Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_book.Location = new Point(62, -5);
+            lbl_book.Name = "lbl_book";
+            lbl_book.Size = new Size(93, 21);
+            lbl_book.TabIndex = 0;
+            lbl_book.Text = "Book Count:";
             // 
             // panel1
             // 
@@ -167,7 +167,6 @@
             Font = new Font("Franklin Gothic Medium", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Form1";
             Text = "Library";
-            Load += Form1_Load;
             pnl_book.ResumeLayout(false);
             pnl_book.PerformLayout();
             panel1.ResumeLayout(false);

@@ -1,3 +1,5 @@
+using DashBoard.Contexts;
+
 namespace DashBoard
 {
     public partial class Form1 : Form
@@ -5,11 +7,8 @@ namespace DashBoard
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            LibraryDb libraryDb = new LibraryDb();
+            libraryDb.Book.Add(new Entities.Book())
         }
     }
 }
