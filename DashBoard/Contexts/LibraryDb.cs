@@ -9,7 +9,7 @@ namespace DashBoard.Contexts
         // functions for configuration domain classes and making connection with server
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=STHQ012B-04;Initial Catalog=Library;User ID=admin;Password=admin;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer("Data Source=STHQ0124-09;Database=Library;User ID=admin;Password=admin;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
             base.OnConfiguring(optionsBuilder);
         }
 
