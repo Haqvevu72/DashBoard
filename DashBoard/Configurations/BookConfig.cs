@@ -48,7 +48,7 @@ namespace DashBoard.Configurations
             // Relationship between Theme and Book
             builder.HasOne<Theme>()
                    .WithMany()
-                   .HasForeignKey(book => book.Id_Theme);
+                   .HasForeignKey(book => book.Id_Themes);
 
             // Relationship between Category and Book 
             builder.HasOne<Category>()

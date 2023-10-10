@@ -9,7 +9,7 @@ namespace DashBoard.Contexts
         // functions for configuration domain classes and making connection with server
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=STHQ012E-16;Database=LibraryDb;User ID=admin;Password=admin;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer("Data Source=STHQ012B-04;Initial Catalog=Library;User ID=admin;Password=admin;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
             base.OnConfiguring(optionsBuilder);
         }
 
@@ -32,7 +32,7 @@ namespace DashBoard.Contexts
         }
     
         // My Tables
-        public  DbSet<Book> Book { get; set; }
+        public  DbSet<Book> Books { get; set; }
 
         public DbSet<Author> Authors { get; set; }
 
@@ -46,7 +46,7 @@ namespace DashBoard.Contexts
 
         public DbSet<Lib> Libs { get; set; }
 
-        public DbSet<Press> Presses { get; set; }
+        public DbSet<Press> Press { get; set; }
 
         public DbSet<S_Card> S_Cards { get; set; }
 

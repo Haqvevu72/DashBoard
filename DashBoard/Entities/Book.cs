@@ -6,9 +6,9 @@
 
         public  int Pages { get; set; }
 
-        public DateTime YearPress { get; set; }
+        public int YearPress { get; set; }
 
-        public int Id_Theme { get; set; }
+        public int Id_Themes { get; set; }
 
         public  int  Id_Category { get; set; }
 
