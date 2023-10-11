@@ -38,6 +38,9 @@ namespace DashBoard
 
             library.Books.Add(newbook);
             library.SaveChanges();
+
+            DashBoard.lbl_bookcount.Text = library.Books.Count().ToString();
+
             MessageBox.Show("Book is successfully added !", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
             Close();

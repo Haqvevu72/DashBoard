@@ -45,5 +45,11 @@ namespace DashBoard
             AddBook addBook = new AddBook();
             addBook.ShowDialog();
         }
+
+        private void btn_addstudent_Click(object sender, EventArgs e)
+        {
+            AddStudent addStudent = new AddStudent();
+            addStudent.ShowDialog();
+        }
     }
 }
