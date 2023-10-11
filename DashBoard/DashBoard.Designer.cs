@@ -171,6 +171,7 @@
             btn_addteacher.TabIndex = 7;
             btn_addteacher.Text = "Add Teacher";
             btn_addteacher.UseVisualStyleBackColor = false;
+            btn_addteacher.Click += btn_addteacher_Click;
             // 
             // btn_addstudent
             // 
@@ -233,12 +234,13 @@
         private Panel panel1;
         private Label lbl_student;
         private Panel panel2;
-        private Label lbl_teachercount;
+
         private Label lbl_teacher;
         private Button btn_addteacher;
         private Button btn_addstudent;
         private Button btn_addbook;
         public static Label lbl_bookcount;
         public static Label lbl_studentcount;
+        public static  Label lbl_teachercount;
     }
 }

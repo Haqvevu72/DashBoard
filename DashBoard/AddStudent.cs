@@ -34,7 +34,7 @@ namespace DashBoard
 
             DashBoard.lbl_studentcount.Text = library.Students.Count().ToString();
 
-            MessageBox.Show("Book is successfully added !", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Student is successfully added !", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             Close();
 
